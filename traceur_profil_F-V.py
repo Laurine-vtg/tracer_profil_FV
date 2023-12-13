@@ -262,6 +262,10 @@ st.write('<span style="color: green;">Principaux résultats :</span>', unsafe_al
 pente_Drf = np.polyfit(new_dataframe['RF (%)'], new_dataframe['vitesse_model'], 1)[0]
 st.write(f"- Drf : {round(pente_Drf,2)}")
 
+# Drf en %
+Drf = pente_Drf*100
+st.write (f"-Drf (%) : {round(Drf,2)}")
+
 # Calcul de F0(N) en utilisant la régression linéaire
 ordonnee_origine = np.polyfit(new_dataframe['vitesse_model'],new_dataframe['F Hzt total (N)'], 1)[1]
 st.write(f"- F0 (N) : {round(ordonnee_origine,2)}")
@@ -333,7 +337,7 @@ results_dict = {
     "V0 (m/s)": round(V0, 2),
     "Pmax (W/kg)": round(Pmax_kg, 2),
     "Pente du profil": round(pente_profil, 2),
-    "Drf": round(pente_Drf, 2),
+    "Drf": round(Drf, 2),
 }
 
 # Ajouter les temps pour chaque position au dictionnaire

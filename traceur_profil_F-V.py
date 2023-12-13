@@ -76,8 +76,8 @@ with st.sidebar:
     coarse_end_index = st.number_input('Numéro de ligne de fin', min_value=coarse_start_index, max_value=len(data) - 1, value=len(data) - 1)
     
 #with st.sidebar.container():
-   # image = Image.open(r'C:\Users\lauri\OneDrive\Documents\M2\STAGE\PROFIL_FV\photo1.png')
-    #st.image(image, use_column_width=True, caption = 'Exemple de sélection approxixative du sprint')
+    image = Image.open('photo1.png')
+    st.image(image, use_column_width=True, caption = 'Exemple de sélection approximative du sprint')
 
 # Afficher les données sélectionnées grossièrement
 #st.write("Sélection grossière:")
@@ -90,8 +90,8 @@ with st.sidebar:
                                     value=(coarse_start_index, coarse_end_index))
     
 #with st.sidebar.container():
-    #image1 = Image.open(r'C:\Users\lauri\OneDrive\Documents\M2\STAGE\PROFIL_FV\photo2.png')
-    #st.image(image1, use_column_width=True, caption = 'Exemple de sélection précise du sprint')
+    image1 = Image.open('photo2.png')
+    st.image(image1, use_column_width=True, caption = 'Exemple de sélection précise du sprint')
 
 st.sidebar.write('<span style="color: green;">Une fois que votre sprint ressemble à celui en exemple juste au dessus, vous pouvez valider votre sprint.</span>', unsafe_allow_html=True)
 

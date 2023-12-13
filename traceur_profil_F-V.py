@@ -264,7 +264,7 @@ st.write(f"- Drf : {round(pente_Drf,2)}")
 
 # Drf en %
 Drf = pente_Drf*100
-st.write (f"-Drf (%) : {round(Drf,2)}")
+st.write (f"- Drf (%) : {round(Drf,2)}")
 
 # Calcul de F0(N) en utilisant la régression linéaire
 ordonnee_origine = np.polyfit(new_dataframe['vitesse_model'],new_dataframe['F Hzt total (N)'], 1)[1]

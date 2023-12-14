@@ -19,7 +19,7 @@ date_de_naissance = st.text_input("Date de naissance (jj/mm/aaaa)")
 equipe = st.selectbox("Equipe",["","Réserve","Formation","Avenir"],)
 poste = st.selectbox("Poste",["","G","Def","Mil","Att"])
 statut = st.text_input("Statut")
-masse = st.number_input("Masse (kg)",value=0)
+masse = st.number_input("Masse (kg)")
 taille_cm = st.number_input("Taille (cm)",value=0)
 taille = taille_cm/100
 #st.write(taille)
